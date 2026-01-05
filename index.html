@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Violencia de Género</title>
+
+<style>
+:root{
+--fondo:#f4f4f4;
+--texto:#222;
+--tarjeta:#ffffff;
+--morado:#6a1b9a;
+--rosa:#ec407a;
+}
+
+.dark{
+--fondo:#121212;
+--texto:#f1f1f1;
+--tarjeta:#1e1e1e;
+}
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:var(--fondo);
+color:var(--texto);
+transition:.4s;
+}
+
+header{
+background:linear-gradient(90deg,var(--morado),var(--rosa));
+color:white;
+padding:50px 20px;
+text-align:center;
+}
+
+section{
+max-width:900px;
+margin:40px auto;
+background:var(--tarjeta);
+padding:30px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+text-align:center;
+}
+
+h2{
+color:var(--morado);
+}
+
+button{
+background:var(--morado);
+color:white;
+border:none;
+padding:12px 20px;
+margin:10px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:var(--rosa);
+}
+
+footer{
+background:#1c1c1c;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Prevención y Detección de la Violencia de Género</h1>
+<p>Proyecto educativo interactivo</p>
+<button onclick="modoOscuro()">🌙 Modo oscuro</button>
+</header>
+
+<section>
+<h2>📌 Contenido</h2>
+
+<button onclick="location.href='violencia.html'">¿Qué es la violencia?</button>
+<button onclick="location.href='prevencion.html'">Importancia y consecuencias</button>
+<button onclick="location.href='ciclo.html'">Ciclo de la violencia</button>
+<button onclick="location.href='contenido.html'">Contenido</button>
+<button onclick="location.href='ayuda.html'">¿Qué hacer ante un caso?</button>
+
+</section>
+
+<footer>
+<p>La información salva vidas 💜</p>
+<p> Gustavo Garcia Vázquez</p>
+<p> Orlando Emannuel Hernandez Cruz </p>
+</footer>
+
+<script>
+function modoOscuro(){
+  document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
